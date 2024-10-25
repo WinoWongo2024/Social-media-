@@ -61,3 +61,60 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+/* Default styles for desktop and large screens */
+body {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#sidebar {
+    width: 60px;
+}
+
+#content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+#chat-window {
+    width: 70%;
+}
+
+#right-sidebar {
+    width: 25%;
+}
+
+/* Responsive styles for tablets and small desktops */
+@media (max-width: 1024px) {
+    #chat-window {
+        width: 65%;
+    }
+
+    #right-sidebar {
+        display: none; /* Hide right sidebar to save space */
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding: 5px 0;
+    }
+
+    #content {
+        flex-direction: column;
+    }
+
+    #chat-window {
+        width: 100%;
+    }
+}
