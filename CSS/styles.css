@@ -1,1 +1,63 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* CSS Variables for Theme Colors */
+:root {
+    --background-color: #f3f4f6;
+    --primary-color: #1e3a8a;
+    --secondary-color: #3b82f6;
+    --text-color: #333;
+    --sidebar-bg-color: #1e1e1e;
+    --sidebar-text-color: #fff;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Layout Styling */
+#sidebar {
+    width: 60px;
+    background-color: var(--sidebar-bg-color);
+    color: var(--sidebar-text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+#content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#chat-window {
+    width: 70%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#right-sidebar {
+    width: 25%;
+    background: #f9fafb;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
